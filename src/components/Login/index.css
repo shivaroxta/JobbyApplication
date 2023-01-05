@@ -1,0 +1,47 @@
+.login-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  background-color: #202020;
+  height: 50vh;
+  width: 30vw;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.username-input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.password-input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.username-label {
+  margin-top: 40px;
+}
+.button {
+  color: white;
+  background-color: #4f46e5;
+  width: 10vw;
+  padding: 10px;
+  outline: none;
+  border-width: 0px;
+  cursor: pointer;
+}
+.error {
+  color: red;
+  font-size: 10px;
+}

@@ -1,0 +1,7 @@
+.item {
+  background-color: #202020;
+}
+.logo-title {
+  display: flex;
+  flex-direction: row;
+}
