@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import {useState} from 'react'
 import './index.css'
 
@@ -6,7 +7,9 @@ const FilterGroups = props => {
     changeSalary,
     changeEmployment,
     salaryRangesList,
+    // eslint-disable-next-line
     isChecked,
+    // eslint-disable-next-line
     setIsChecked,
     employmentTypesList,
     // eslint-disable-next-line

@@ -71,7 +71,7 @@ const Jobs = () => {
     const apiUrl = `https://apis.ccbp.in/jobs?employment_type=${employmentId.join()}&minimum_package=${salaryId}search=${searchInput}`
     // &minimum_package=${salaryRange}
     const options = {
-      header: {
+      headers: {
         Authorization: `Bearer ${jwtToken}`,
       },
       method: 'GET',
@@ -99,7 +99,7 @@ const Jobs = () => {
   useEffect(() => {
     getJobsDetails()
     // eslint-disable-next-line
-  }, [])
+  }, [employmentId, salaryId])
 
   const onChangeSearchInput = event => {
     setSearchInput(event.target.value)
@@ -112,13 +112,13 @@ const Jobs = () => {
   }
 
   const changeEmployment = type => {
-    setEmploymentId(prevState => [...prevState, type], getJobsDetails())
+    setEmploymentId(prevState => [...prevState, type])
 
     console.log(employmentId)
   }
 
   const changeSalary = salary => {
-    setSalaryId(salary, getJobsDetails())
+    setSalaryId(salary)
     console.log(salaryId)
   }
 
